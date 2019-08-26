@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+    <h1>hello world</h1>
+    <h1>hello world</h1>
+    <h1>hello world</h1>
+
+    <script>
+        //setter
+        //1. 문자열 문자열 지정 방법
+        $('h1').css('color','yellow');
+    
+        //2.객체로 지정하는 방법 : css(속성 : 값)
+        $("h1").css({
+            'color' : 'red',
+            'backgroundColor' : 'yellow',
+            'text-algin' : 'center'
+        });
+
+        //3. 함수로 지정하는 방법
+        $('h1').css('background-color',function(){
+            return 'skyblue';
+        })
+
+        // var arr = ['red', 'gray', 'pink']
+        // $('h1').css('backgroundColor',function(index) {
+        //     return arr[index];
+        // })
+
+        var arr = ['red', 'gray', 'pink']
+        $('h1').css('color',function(index) {
+            return arr[index];
+        })
+
+        //getter
+        var rgb = $('h1').css('color');
+        alert(rgb);
+    </script>
+</body>
+</html>

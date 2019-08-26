@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        .header {
+            color: red;
+            text-align: center;
+        }
+
+        .red {
+            background-color: #555555;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello new world</h1>
+    <h1></h1>
+
+    <script>
+        $('h1').attr('class','header');
+        $('h1').addClass('red');
+
+        setTimeout(function() {
+            $('h1').removeClass('header');
+        })
+        
+        var ouputA = $('h1').hasClass('red');
+        var ouputB = $('h1').hasClass('red');
+
+
+        //이렇게 하면 추력 안 돼. false가!
+        //$('h1').html(ouputA).append('body');
+        //$('h1').html(ouputB).append('body');
+        
+        $('h1').html(ouputA.toString()).appendTo('body');
+        $('h1').html(ouputB.toString()).appendTo('body');
+
+        $('h1').removeAttr('class');//remove all class
+        $('h1').remove(); //remove all in h1 tag
+
+        $('h1').toggleClass('a1'); //if this class is not this dom, make clss. but if is remove class.
+        $('h1').toggleClass('a1');
+    </script>
+</body>
+</html>

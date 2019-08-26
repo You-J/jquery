@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+</head>
+<body>
+    <h1>hello world</h1>
+    <script>
+        //문서객체 선택
+        $("h1").css("color","red");
+        $("h1").css("backgroundColor","pink");
+
+        //문서객체 생성
+        $("<h2></h2>").appendTo("body").css("backgroundColor","gray").html("good moring");
+
+
+        //문서객체 직접 삽입
+        var header = document.querySelector("h1"); //== document.getElementsByTag
+        $(header).css("color","blue");
+    </script>
+</body>
+</html>

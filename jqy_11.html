@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <style>
+    
+        #a1 {
+            border: 1px solid red;
+        }
+
+        p {
+            border: 1px solid plum;
+        }
+
+    </style>
+    <script>
+        function append1() {
+            $('#a1').append('<p>Added new p1 tag');
+        }
+    
+        function append2() {
+            var tag = $('<p>');
+                p.text('added append2');
+                $('#a1').append();
+        }
+
+        function after1() {
+            $('#a1').after('<p>new p tag</p>');
+        }
+
+        function after2() {
+            var tag = $('<p>');
+                p.text('added after2');
+                $('#a1').after();
+        }
+
+        function before1() {
+            $('#a1').before('<p>new p tag</p>');
+        }
+
+        function before2() {
+            var tag = $('<p>');
+                p.text('added before2');
+                $('#a1').before();
+        }
+
+        function prepend1() {
+            $('#a1').prepend('<p>new p tag</p>');
+        }
+        
+        function prepend2() {
+            var tag = $('<p>');
+                p.text('added prepend2');
+                $('#a1').prepend();
+        }
+    </script>
+</head>
+<body>
+    <div id='a1'>
+        <p>p tag</p>
+    </div>
+    <button onclick="append1()">added append1</button>
+    <button onclick="append2()">added append2</button>
+    <button onclick="after1()">added after1</button>
+    <button onclick="after2()">added after2</button>
+    <br>
+    <button onclick="before1()">added before1</button>
+    <button onclick="before2()">added before2</button>
+    <button onclick="prepend1()">added prepend1</button>
+    <button onclick="prepend2()">added prepend2</button>
+</body>
+</html>
