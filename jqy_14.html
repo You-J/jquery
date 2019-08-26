@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <style>
+    
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    </style>
+
+</head>
+<body>
+    <img src='https://images.app.goo.gl/VE3qJYZSb4AYPBC3A'>
+    <img src='https://images.app.goo.gl/yebG7zjt6GeQNzzr5'>
+    <img src='https://images.app.goo.gl/pHvWrVMPfWgowCVRA'>
+
+    <script>
+        setInterval(function() {
+            $('img').first().insertAfter('body');
+        },2000)
+    </script>
+</body>
+</html>
