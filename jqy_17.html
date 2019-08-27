@@ -15,7 +15,14 @@
         $('a').click(function(evnet) {
             $(this).html('click');
             $(this).css('color','red');
-            event.preventDefault();
+            // event.preventDefault(); //기본 이벤트 제거
+            // event.stopPropagation(); //뒤에 연결되는 이벤트를 실행
+
+            return false;
+        })
+
+        $('body').clcik(function() {
+            $(this).css('backgroundColor','yellow');
         })
     </script>
 </body>
