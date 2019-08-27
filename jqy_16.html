@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+    <h1>hello</h1>
+
+    <script>
+        
+        $('h1').click(function(event) {
+            //alert(event.currentTarget);
+            //$(event.currentTarget).html('click');
+            //event.currentTarget == this
+            $(this).html('clcik').css('color','red');
+            $(this).html('clcik').css('backgroundColor','yellow');
+            alert('hello_A');
+        })
+        $('h1').click(function(event) {
+            alert('hello_B');
+        })
+
+
+
+    </script>
+</body>
+</html>
