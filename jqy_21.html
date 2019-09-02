@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+</head>
+<body>
+    <!-- <h1>event</h1>
+    
+    <button onclick="bg()">배경색 변경</button>
+    <script>
+        function bg() {
+            $('h1').css('backgroundColor','red');
+        }
+    </script> -->
+
+    <h3 id='a1'>click</h3>
+    <h3 id='a2'>dbclick</h3>
+    <h3 id='a3'>mouseenter/mouseleave</h3>
+    <h3 id='a4'>mouseup/mousedown</h3>
+    <h3 id='a5'>mouse hover</h3>
+    <input type="text" id='a6'>focus
+
+    <script>
+        $('#a1').click(function(event) {
+            
+            $(this).html('clcik').css('color','red');
+        })
+
+        $('#a2').dblclick(function(event) {
+            $(this).html('dblclick').css('color','red');
+        })
+
+        // $('#a3').mouseenter(function(event) {
+        //     $(this).html('mouseenter').css('color','pink');
+        // })
+
+        // $('#a3').mouseleave(function(event) {
+        //     $(this).html('mouseleave').css('color','red');
+        // })
+
+
+        $('#a3').on({
+            mouseenter: function() {
+                (this).css('color','pink');
+            },
+            mouseleave: function(){
+                $(this).css('color','red');
+            } 
+        })
+
+        $('#a4').mouseup(function(event) {
+            $(this).html('mouseup').css('color','gray');
+        })
+
+        $('#a4').mousedown(function(event) {
+            $(this).html('mousedown').css('color','pink');
+        })
+
+        // $('#a5').hover(function(event) {
+        //     $(this).html('hover').css('color','#ff00d0');
+        // })
+
+        ('#a5').on({
+            mouseenter: function() {
+                $(this).css('color','ff00d0');
+            }, 
+            mouseleave: function() {
+                $(this).css('color','ffd156');
+            }
+        })
+    </script>
+</body>
+</html>
