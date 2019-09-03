@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <form id="myFrom">
+        name<input type="text" id="name"/><br/>
+        password<input type="password" id="passwd"/><br/>
+        <input type="submit" onsubmit="clicks()" value="login" name="login">
+    </form>
+
+    <script>
+
+        $("#myFrom").submit(function() {
+            var name =$("#name").val();
+            var passwd = $("#passwd").val();
+            alert(name + " " + passwd);
+        })
+    
+    </script>
+</body>
+</html>

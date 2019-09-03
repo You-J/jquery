@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h3 id="didi">150</h3>
+    <textarea id="num">
+    </textarea>
+
+    <script>
+        $("#num").keyup(function() {
+            var count  = $("#num").val().length;
+            
+            $("#didi").html(150 - count);
+
+            if( 150-count < 0) {
+                $("#didi").css('color','red');
+            }
+            else {
+                $("#didi").css('color','black');
+            }
+        })
+
+        
+        
+        </script>
+</body>
+</html>

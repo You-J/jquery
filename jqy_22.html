@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <h3 id="a1">on</h3>
+
+    <button type="button" onclick="remove_event()">remove_event</button>
+    <h3 id="a2">one</h3>
+    <h3 id="a3">event_setting</h3>
+
+    <script>
+        $("#a1").on('click',function(event){
+            alert("a1");
+        })
+
+        $("#a2").one('click',function(event){
+            alert("a2");
+        })
+
+        function remove_event() {
+            $("a1").off('click');
+        }
+    </script>
+</body>
+</html>
