@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.innerfade/js/jquery.innerfade.js"></script>
+    <title>Document</title>
+    <style>
+        #a1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid darkgoldenrod;
+            background-color: darkgoldenrod;
+            position: relative; /*포지션 바꿀 때는 relative혹은 absolute*/
+        }
+    </style>
+</head>
+<body>
+    <script>
+        $(function() {
+            $("li").mouseenter(function(e){
+                $(this).css('background-color','yellow');
+            })
+            $("li").mouseleave(function(e){
+                $(this).css('background-color','pink');
+            })
+        })
+
+    </script>
+    
+    
+    <ul>
+        <li>김연진</li>
+        <li>최효성</li>
+        <li>성경주</li>
+    </ul>
+</body>
+</html>
