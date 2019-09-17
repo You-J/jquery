@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="jquery.innerfade/js/jquery.innerfade.js"></script>
+    <title>Document</title>
+    <style>
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        $(function() {
+            $('#inner_fade').innerfade({
+                animationtype : 'slide',
+                speed: 700,
+                timeout:2000,
+                type:'random',
+                containerheight:'350px'
+            });
+        })    
+        
+    </script>
+    <ul id="inner_fade">
+        <li><img src="dog.JPG"></li>
+        <li><img src="dog.JPG"></li>
+        <li><img src="dog.JPG"></li>
+        <li><img src="dog.JPG"></li>
+        <li><img src="dog.JPG"></li>
+    </ul>
+</body>
+</html>

@@ -23,6 +23,18 @@
             alert("a2");
         })
 
+        $("#a3").on({
+            click: function() {
+                $(this).css('color','red');
+            },
+            mouseenter : function() {
+                $(this).css('color','PINK');
+            },
+            mouseleave : function() {
+                $(this).css('color','BLUE');
+            }
+        })
+
         function remove_event() {
             $("a1").off('click');
         }

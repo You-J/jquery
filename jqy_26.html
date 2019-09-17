@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        #a1 {
+            border: 1px solid seagreen;
+            background-color: coral;
+            width: 200px;
+            height: 200px;
+            
+
+        }
+
+    </style>
+
+</head>
+<body>
+    <button onclick="div_hide()">hide</button>
+    <button onclick="div_show()">show</button>
+    <button onclick="div_toggle()">toggle</button>
+    
+    <button onclick="div_slideUp()">slideUp</button>
+    <button onclick="div_slideDown()">slideDown</button>
+    <button onclick="div_slideToggle()">slidetoggle</button>
+
+    
+    <button onclick="div_fadeIn()">fadeIn</button>
+    <button onclick="div_fadeOut()">fadeOut</button>
+    <button onclick="div_fadeToggle()">fadeToggle</button>
+    
+    <button onclick="div_fadeTo()">fadeTo</button>
+    <div id="a1"></div>
+    <script>
+        function div_hide() {
+            $("#a1").hide();
+        }
+
+        function div_show() {
+            $("#a1").show();
+        }
+
+        function div_toggle() {
+            $("#a1").toggle();
+        }
+
+        function div_slideUp() {
+            $("#a1").slideUp();
+        }
+
+        function div_slideDown() {
+            $("#a1").slideDown();
+        }
+
+        function div_slideToggle() {
+            $("#a1").slideToggle();
+        }
+
+        function div_fadeIn() {
+            $("#a1").fadeIn();
+        }
+        function div_fadeOut() {
+            $("#a1").fadeOut();
+        }
+        function div_fadeToggle() {
+            $("#a1").fadeToggle();
+        }
+
+        function div_fadeTo() {
+            $("#a1").fadeTo("slow" , 0.5 , function() {alert("fade")});
+        }
+        
+    </script>
+</body>
+</html>
