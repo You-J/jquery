@@ -8,7 +8,7 @@
     <script src="jquery.innerfade/js/jquery.innerfade.js"></script>
     <title>Document</title>
     <style>
-        #a1 {
+        .a1 {
             width: 100px;
             height: 100px;
             border: 1px solid darkgoldenrod;
@@ -20,14 +20,23 @@
 <body>
     <script>
         $(function() {
-            $("li").mouseenter(function(e){
-                $(this).css('background-color','yellow');
+            // $("li").mouseenter(function(e){
+            //     $(this).css('background-color','yellow');
+            // })
+            // $("li").mouseleave(function(e){
+            //     $(this).css('background-color','pink');
+            // })
+            $(".a").hide();
+            $("h2").click(function(e){
+                $(".a").show("slow");
             })
-            $("li").mouseleave(function(e){
-                $(this).css('background-color','pink');
+
+            $(".a1").click(function(e) {
+                $(this).animate({
+                    left : '+=250px'
+                },'slow');
             })
         })
-
     </script>
     
     
@@ -36,5 +45,24 @@
         <li>최효성</li>
         <li>성경주</li>
     </ul>
+
+    <hr>
+
+    <h1>menu open 버튼을 클릭하면 서브 메뉴가 나타나게 하시오</h1>
+    
+    <h2>menu open</h2>
+    <ul class="a"> 
+        <li>김연진</li>
+        <li>최효성</li>
+        <li>성경주</li>
+    </ul>
+
+    <hr>
+    <!--sleeping....-->
+
+    <h2>animate를 이용하여 div 클릭 시 오른쪽으로 250px이동</h2>
+    <div class="a1">
+
+    </div>
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>서랍메뉴</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="jquery.innerfade/js/jquery.innerfade.js"></script>
+        <script src = "js/aside.js"></script>
+        <style>
+            .main > aside {
+                background-color: rgba(0,0,0,0.8);
+                width: 350px;
+                left: -350px;
+                height: 100%;
+                top: 0;
+                position: fixed;
+            } /* 서랍메뉴 */
+            .main > aside li {
+                list-style: none;
+                margin: 0 0 20px;
+            } /* 이미지 */
+            .main > aside button {
+                background-color: rgba(0,0,0,0.8);
+                display: block;
+                position: absolute;
+                top: 150px;
+                left: 350px;
+                width: 52px;
+                height: 132px;
+                margin: 0;
+                padding: 0;
+                border: none;
+            } /* open close 버튼 */
+        </style>
+
+        <script>
+          
+        </script>
+    </head>
+        <body>
+            <div class="main">
+                <aside>
+                    <ul>
+                        <li><a href="#"><img src="img/01_aside.png"></a></li>
+                        <li><a href="#"><img src="img/02_aside.png"></a></li>
+                        <li><a href="#"><img src="img/03_aside.png"></a></li>
+                    </ul>
+                        <button><img src="img/btn_open.png"></button>
+                </aside>
+            </div>
+        </body>
+</html>

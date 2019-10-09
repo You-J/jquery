@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Document</title>
+    <style>
+
+        .main > aside {
+            width: 350px;
+            height: 100%;
+            background-color: gray;
+            left: -350px;
+            top:0;
+            position: fixed;
+        }
+
+        .main > aside li {
+            list-style: none;
+            margin: 0 0 10px;
+
+        }
+        .main > aside button {
+            background-color: rgba(0, 0, 0, 0.8);
+            display: block;
+            position: absolute;
+            top: 150px;
+            left:350px;
+            width:52px;
+            height: 132px;
+            margin: 0;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <aside>
+            <ul>
+                <li><a href="#"><img src="img/01_aside.png"></a></li>
+                <li><a href="#"><img src="img/02_aside.png"></a></li>
+                <li><a href="#"><img src="img/03_aside.png"></a></li>
+
+            </ul>
+            <button></button>
+        </aside>
+    </div>
+</body>
+</html>

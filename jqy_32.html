@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>Document</title>
+
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+        }
+        body {
+            background-color: green;
+        }
+        nav > ul > li {
+            float: left;
+            margin-left: 10px;
+        }
+        .clearfix > li {
+            
+            line-height: 50px;
+        }
+
+        header {
+            background: linear-gradient(white 50px,
+             rgba(255,255,255,0.6) 50px);
+            height: 50px;
+            overflow: hidden;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="back">
+        <header>
+            <nav>
+                <ul class="clearfix">
+                    <li>1st menu
+                        <ul>
+                            <li>list</li>
+                            <li>list</li>
+                            <li>list</li>
+                        </ul>
+                    </li>
+                    <li>1st menu
+                        <ul>
+                            <li>list</li>
+                            <li>list</li>
+                            <li>list</li>
+                        </ul>
+                    </li>
+                    <li>1st menu
+                        <ul>
+                            <li>list</li>
+                            <li>list</li>
+                            <li>list</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <script>
+        $(function() {
+            $('header').mouseenter(function(e){
+                $(this).animate({
+                    height : '+=250px'
+                },'slow');
+            })
+            $('header').mouseleave(function(e){
+                $(this).animate({
+                    height:'-=250px'
+                },'slow');
+            })
+        })
+    
+    </script>
+</body>
+</html>
